@@ -16,6 +16,8 @@
 
 package org.springframework.samples.petclinic;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -50,9 +52,9 @@ public class PetClinicIntegrationTests {
 	}
 	
     @Test
-    void contextLoads() {
-    assertEquals(1,2);
-	}
+    void dummyFailingTest() {
+        assertEquals(1, 2);
+    }
 	
 	@Test
 	void testOwnerDetails() {
