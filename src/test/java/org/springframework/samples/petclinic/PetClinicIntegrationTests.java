@@ -16,7 +16,6 @@
 
 package org.springframework.samples.petclinic;
 
-
 import static org.assertj.core.api.Assertions.assertThat;
 
 import org.junit.jupiter.api.Test;
@@ -49,7 +48,7 @@ public class PetClinicIntegrationTests {
 		vets.findAll();
 		vets.findAll(); // served from cache
 	}
-	
+
 	@Test
 	void testOwnerDetails() {
 		RestTemplate template = builder.rootUri("http://localhost:" + port).build();
